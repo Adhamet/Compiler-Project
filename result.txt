@@ -1,0 +1,106 @@
+	1: RESERVED WORD: int
+	1: IDENTIFIER <- (name: gcd)
+	1: (
+	1: RESERVED WORD: int
+	1: IDENTIFIER <- (name: u)
+	1: ,
+	1: RESERVED WORD: int
+	1: IDENTIFIER <- (name: v)
+	1: )
+	2: {
+	3: RESERVED WORD: if
+	3: (
+	3: IDENTIFIER <- (name: v)
+	3: ==
+	3: NUMBER <- (val: 0)
+	3: )
+	3: RESERVED WORD: return
+	3: IDENTIFIER <- (name: u)
+	3: ;
+	4: RESERVED WORD: else
+	4: RESERVED WORD: return
+	4: IDENTIFIER <- (name: gcd)
+	4: (
+	4: IDENTIFIER <- (name: v)
+	4: ,
+	4: IDENTIFIER <- (name: u)
+	4: -
+	4: IDENTIFIER <- (name: u)
+	4: /
+	4: IDENTIFIER <- (name: v)
+	4: *
+	4: IDENTIFIER <- (name: v)
+	4: )
+	4: ;
+	5: {
+	7: RESERVED WORD: int
+	7: IDENTIFIER <- (name: main)
+	7: (
+	7: RESERVED WORD: void
+	7: )
+	8: {
+	9: RESERVED WORD: int
+	9: IDENTIFIER <- (name: i)
+	9: ;
+	10: IDENTIFIER <- (name: i)
+	10: =
+	10: NUMBER <- (val: 0)
+	10: ;
+	11: RESERVED WORD: while
+	11: (
+	11: IDENTIFIER <- (name: i)
+	11: <
+	11: NUMBER <- (val: 10)
+	11: )
+	12: {
+	13: IDENTIFIER <- (name: x)
+	13: [
+	13: IDENTIFIER <- (name: i)
+	13: ]
+	13: =
+	13: RESERVED WORD: input
+	13: (
+	13: )
+	13: ;
+	14: IDENTIFIER <- (name: i)
+	14: =
+	14: IDENTIFIER <- (name: i)
+	14: +
+	14: NUMBER <- (val: 1)
+	14: ;
+	15: {
+	16: IDENTIFIER <- (name: gcd)
+	16: (
+	16: NUMBER <- (val: 10)
+	16: ,
+	16: NUMBER <- (val: 12)
+	16: )
+	16: ;
+	17: IDENTIFIER <- (name: i)
+	17: =
+	17: NUMBER <- (val: 0)
+	17: ;
+	18: RESERVED WORD: while
+	18: (
+	18: IDENTIFIER <- (name: i)
+	18: <
+	18: NUMBER <- (val: 10)
+	18: )
+	19: {
+	20: IDENTIFIER <- (name: output)
+	20: (
+	20: IDENTIFIER <- (name: x)
+	20: [
+	20: IDENTIFIER <- (name: i)
+	20: ]
+	20: )
+	20: ;
+	21: IDENTIFIER <- (name: i)
+	21: =
+	21: IDENTIFIER <- (name: i)
+	21: +
+	21: NUMBER <- (val: 1)
+	21: ;
+	22: {
+	23: {
+	24: EOF
